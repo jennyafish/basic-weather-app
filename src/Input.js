@@ -32,16 +32,7 @@ class Input extends React.Component {
       this.setState({weatherdata: data, shown: true});
 
       console.log(this.state.weatherdata);
-    }).catch(err => alert(err));
-
-    // fetch the 5-day forecast
-    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + this.state.value + '&appid=cf8acbc7209bea1e5ea3f15c05d552f4&units=imperial')
-    .then(res => res.json())
-    .then(data => {
-      console.log(data);
-
-      this.setState({forecast: data});
-    })
+    }).catch(err => console.log(err));
 
     event.preventDefault();
   }

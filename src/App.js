@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} width="200px" height="200px" />
+        <img src={logo} alt="" width="200px" height="200px" />
         <h1>Weather Tracker</h1>
 
         <Input />

@@ -4,9 +4,6 @@ import './Input.css';
  Renders weather information
  */
 class WeatherInfo extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     console.log(this.props.data);
@@ -24,7 +21,7 @@ class WeatherInfo extends React.Component {
         <table class="current-weather">
           <tr class="date"><td>Current</td></tr>
           <tr><td>{this.props.data.main.temp}F</td></tr>
-          <tr><td><img src={imgurl} /></td></tr>
+          <tr><td><img src={imgurl} alt=""/></td></tr>
           <tr><td>{this.props.data.weather[0].main}</td></tr>
           <tr><td>{this.props.data.weather[0].description}</td></tr>
         </table>
